@@ -1,0 +1,43 @@
+/* Design tokens — Ketan Organics brand */
+:root {
+  /* Colors */
+  --color-primary: #1b7a36;        /* CTA button green */
+  --color-primary-dark: #1b5a2d;   /* hello bar / deep green */
+  --color-primary-text: #1e6b34;   /* nav link green */
+  --color-accent: #c8e05a;         /* lime (search button) */
+  --color-accent-dark: #b5cf3f;
+  --color-gold: #e2c21c;
+  --color-leaf: #8cba3a;           /* wheel / icon green */
+  --color-lime-btn: #d8e46a;       /* soft lime button */
+  --color-sage: #1c9548;           /* categories section bg */
+  --color-cream: #fdf3a6;          /* pale yellow buttons */           /* marquee separator dots */
+  --color-bg: #fdfbf6;
+  --color-bg-soft: #f3f7ec;        /* pale green section background */
+  --color-surface: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b6b6b;
+  --color-border: #e6e1d6;
+
+  /* Typography */
+  --font-heading: "Lexend", system-ui, sans-serif;
+  --font-display: "Lora", Georgia, serif;   /* serif section titles (matches hero) */
+  --font-body: "Lexend", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --fs-base: 1rem;
+  --fs-h1: clamp(2rem, 5vw, 3.5rem);
+  --fs-h2: clamp(1.6rem, 3.5vw, 2.5rem);
+  --fs-h3: 1.35rem;
+
+  /* Spacing & layout */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+  --container: 1440px;
+  --radius: 8px;
+  --transition: 0.25s ease;
+
+  /* Header */
+  --hello-bar-height: 44px;
+  --header-height: 88px;
+}

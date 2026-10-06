@@ -1,0 +1,43 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: background var(--transition), color var(--transition), transform var(--transition);
+}
+.btn svg { width: 20px; height: 20px; transition: transform var(--transition); }
+.btn:hover svg { transform: translateX(4px); }
+.btn-primary { background: var(--color-primary); color: #fff; }
+.btn-primary:hover { background: var(--color-primary-dark); }
+.btn-outline { border: 2px solid var(--color-primary); color: var(--color-primary); }
+.btn-outline:hover { background: var(--color-primary); color: #fff; }
+
+.btn-lime { background: var(--color-lime-btn); color: var(--color-primary-dark); padding: 0.85rem 1.8rem; font-size: 1rem; }
+.btn-lime:hover { background: var(--color-accent); }
+.btn-lime:hover svg { transform: translate(3px, -3px); }
+
+/* Pale yellow pill with dot ("Read More") */
+.btn-dot {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1.15rem 2.1rem;
+  border-radius: 16px;
+  background: var(--color-cream);
+  color: var(--color-text);
+  font-weight: 500;
+  transition: background var(--transition), transform var(--transition);
+}
+.btn-dot::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  transition: transform var(--transition);
+}
+.btn-dot:hover { background: #fff; }
+.btn-dot:hover::before { transform: scale(1.5); }

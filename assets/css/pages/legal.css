@@ -1,0 +1,63 @@
+/* Legal pages (Terms, Privacy): sticky contents + article */
+.legal { padding-block: clamp(3rem, 6vw, 5.5rem); background: var(--color-bg); }
+.legal__grid {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  align-items: start;
+  gap: 2.5rem clamp(2rem, 5vw, 5rem);
+}
+.legal__toc {
+  position: sticky;
+  top: calc(var(--header-height) + 24px);
+  padding: 1.5rem;
+  border: 1px solid #e1e8d3;
+  border-radius: 22px;
+  background: #fff;
+  max-height: calc(100vh - var(--header-height) - 48px);
+  overflow: auto;
+}
+.legal__toc h2 { font-family: var(--font-heading); font-size: 0.85rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-sage); }
+.legal__toc ol { margin-top: 0.9rem; display: grid; gap: 0.15rem; counter-reset: toc; }
+.legal__toc li { counter-increment: toc; }
+.legal__toc a {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  color: var(--color-text);
+  transition: background var(--transition), color var(--transition);
+}
+.legal__toc a::before { content: counter(toc, decimal-leading-zero); font-size: 0.8rem; font-weight: 500; color: var(--color-leaf); padding-top: 0.1em; }
+.legal__toc a:hover { background: var(--color-bg-soft); color: var(--color-sage); }
+
+.legal__content { max-width: 860px; }
+.legal__updated {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  background: var(--color-bg-soft);
+  font-size: 0.9rem;
+  color: var(--color-primary-dark);
+}
+.legal__updated::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--color-leaf); }
+.legal__contact {
+  margin-top: 2.5rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border-radius: 22px;
+  background: var(--color-primary-dark);
+  color: rgba(255, 255, 255, 0.88);
+}
+.legal__contact h2 { font-family: var(--font-heading); font-size: 1.3rem; font-weight: 500; color: #fff; }
+.legal__contact p { margin-top: 0.5rem; font-weight: 300; line-height: 1.75; }
+.legal__contact a { color: var(--color-accent); }
+.legal__contact a:hover { text-decoration: underline; }
+
+@media (max-width: 960px) {
+  .legal__grid { grid-template-columns: 1fr; }
+  .legal__toc { position: static; max-height: none; }
+}

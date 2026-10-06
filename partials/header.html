@@ -1,0 +1,47 @@
+  <!-- HELLO BAR → wordpress: template-parts/header/hello-bar.php -->
+  <div class="hello-bar" aria-label="Highlights">
+    <div class="marquee">
+      <ul class="marquee__group">
+          <li class="marquee__item">100% Organic Herbs &amp; Spices</li>
+          <li class="marquee__item">Backed by Our Own Farmer Network</li>
+          <li class="marquee__item">Quality-Checked at Every Step</li>
+          <li class="marquee__item">Grown Naturally, Delivered with Trust</li>
+          <li class="marquee__item">Export-Ready Organic Produce</li>
+          <li class="marquee__item">10+ Years of Organic Excellence</li>
+      </ul>
+      <!-- duplicate group for seamless loop -->
+      <ul class="marquee__group" aria-hidden="true">
+          <li class="marquee__item">100% Organic Herbs &amp; Spices</li>
+          <li class="marquee__item">Backed by Our Own Farmer Network</li>
+          <li class="marquee__item">Quality-Checked at Every Step</li>
+          <li class="marquee__item">Grown Naturally, Delivered with Trust</li>
+          <li class="marquee__item">Export-Ready Organic Produce</li>
+          <li class="marquee__item">10+ Years of Organic Excellence</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- HEADER → wordpress: header.php + template-parts/header/site-header.php -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="site-logo" aria-label="Ketan Organics — Home">
+        <img src="assets/images/ketan-logo.webp" alt="Ketan Organics" width="500" height="183">
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="quality-certifications.html">Quality &amp; Certifications</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary">Get Appointment</a>
+        <button class="nav-toggle" type="button" aria-label="Menu" aria-controls="site-nav" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>

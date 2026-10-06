@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 960">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0" stop-color="#b8e08a"/><stop offset=".6" stop-color="#4f9a3a"/><stop offset="1" stop-color="#1c4a1f"/></radialGradient>
+    <g id="leaf"><path d="M0 0c-70-40-90-130-40-200C40-160 60-60 0 0z" fill="#3f8f2e"/><path d="M0 0c-30-60-35-130-40-200" fill="none" stroke="#b9e38d" stroke-width="5"/><path d="M-12-40l-40-20M-20-90l-40-15M-28-140l-30-10M-10-60l25-25M-18-110l25-25" stroke="#8fcf62" stroke-width="3" fill="none"/></g>
+  </defs>
+  <rect width="760" height="960" fill="url(#bg)"/>
+  <path d="M380 900V380" stroke="#2f6b24" stroke-width="10"/>
+  <use href="#leaf" transform="translate(380 420) rotate(-40)"/>
+  <use href="#leaf" transform="translate(380 420) rotate(40) scale(-1 1)"/>
+  <use href="#leaf" transform="translate(380 560) rotate(-60) scale(1.15)"/>
+  <use href="#leaf" transform="translate(380 560) rotate(60) scale(-1.15 1.15)"/>
+  <use href="#leaf" transform="translate(380 700) rotate(-75) scale(1.25)"/>
+  <use href="#leaf" transform="translate(380 700) rotate(75) scale(-1.25 1.25)"/>
+  <use href="#leaf" transform="translate(380 390) scale(.8)"/>
+  <g fill="#fff" opacity=".35"><circle cx="200" cy="200" r="8"/><circle cx="560" cy="260" r="6"/><circle cx="600" cy="160" r="10"/></g>
+</svg>

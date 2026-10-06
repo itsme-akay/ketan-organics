@@ -1,0 +1,101 @@
+/* Reusable section heading: eyebrow + serif title + intro */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+.eyebrow::after {
+  content: "";
+  width: 56px;
+  height: 1px;
+  background: currentColor;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 3.6vw, 3rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--color-primary-dark);
+}
+.section-title span { color: var(--color-primary); }
+
+.section-intro {
+  margin-top: 1.25rem;
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+}
+
+/* Variant: icon + plain label (no caps, no line) */
+.eyebrow--icon {
+  gap: 6px;
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 1.05rem;
+  color: var(--color-text);
+}
+.eyebrow--icon::after { display: none; }
+.eyebrow--icon svg { width: 40px; height: 36px; color: var(--color-leaf); margin-bottom: 8px; }
+
+/* Variant: bold sans title */
+.section-title--sans {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  color: var(--color-text);
+  font-size: clamp(2rem, 4.2vw, 3.6rem);
+}
+
+.section-head--center { text-align: center; }
+.section-head--center .eyebrow { justify-content: center; }
+
+/* Scroll reveal (activated by main.js) */
+.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.js [data-reveal].is-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .js [data-reveal] { opacity: 1; transform: none; transition: none; }
+}
+
+/* Outlined pill label ("FARM SOLUTIONS" style) */
+.pill-label {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+/* Soft lime pill with dot ("Testimonial" style) */
+.dot-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  background: #f2f6dc;
+  color: var(--color-primary-dark);
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+}
+.dot-label::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-leaf);
+}
