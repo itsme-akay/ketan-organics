@@ -1,0 +1,97 @@
+/* Site footer: brand + links + contact | soil strip */
+.site-footer {
+  position: relative;
+  background: var(--color-sage);
+  color: #fff;
+  overflow: hidden;
+}
+.site-footer a { transition: color var(--transition), opacity var(--transition); }
+
+/* Main row */
+.footer-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.5fr) minmax(0, 1.1fr);
+  gap: 2.5rem clamp(1.5rem, 4vw, 4rem);
+  padding-block: clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.footer-brand__logo {
+  display: grid;
+  place-items: center;
+  width: clamp(104px, 10vw, 128px);
+  aspect-ratio: 1;
+  padding: 14px;
+  border: 3px solid #e3bd3c;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+.footer-brand__logo img { width: 100%; height: auto; }
+
+.footer-social { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.75rem; }
+.footer-social a {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--color-sage);
+  transition: background var(--transition), color var(--transition), transform var(--transition);
+}
+.footer-social svg { width: 21px; height: 21px; }
+.footer-social a:hover { background: #e8b82e; color: #111; transform: translateY(-3px); }
+.footer-copy { margin-top: 1.5rem; font-size: 0.98rem; line-height: 1.7; opacity: 0.95; }
+
+.footer-links { display: grid; grid-template-columns: 1fr 1fr; gap: 0 1.5rem; align-content: start; }
+.footer-links li { position: relative; padding-left: 1.5rem; }
+.footer-links li + li { margin-top: 0.85rem; }
+.footer-links li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
+  transition: background var(--transition), transform var(--transition);
+}
+.footer-links a { font-size: 1.08rem; }
+.footer-links a:hover { color: var(--color-cream); }
+.footer-links li:hover::before { background: var(--color-cream); transform: scale(1.5); }
+
+.footer-contact { font-style: normal; font-size: 1.05rem; line-height: 1.55; }
+.footer-contact p + p { margin-top: 0.9rem; }
+.footer-contact strong { display: block; font-weight: 600; }
+.footer-contact a { word-break: break-word; }
+.footer-contact a:hover { color: var(--color-cream); }
+
+/* Soil strip (torn paper image, transparent top, leaf on the left) */
+.footer-soil {
+  display: block;
+  width: 100%;
+  /* full image on desktop; on small screens keep it tall enough and crop from the right so the leaf stays */
+  height: clamp(96px, 11.93vw, 229px);
+  object-fit: cover;
+  object-position: left bottom;
+  margin-top: -1rem;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Tablet */
+@media (max-width: 960px) {
+  .footer-main { grid-template-columns: 1fr 1fr; }
+  .footer-brand { grid-column: 1 / -1; display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 0.5rem 1.5rem; }
+  .footer-brand__logo { grid-row: span 2; }
+  .footer-social { margin-top: 0; align-self: end; }
+  .footer-copy { margin-top: 0; align-self: start; }
+  .footer-copy br { display: none; }
+}
+
+/* Phone */
+@media (max-width: 600px) {
+  .footer-main { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-links a, .footer-contact { font-size: 1rem; }
+}

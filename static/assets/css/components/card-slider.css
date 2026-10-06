@@ -1,0 +1,36 @@
+/* Generic swipe slider (scroll-snap track + arrows + mouse drag) */
+.card-slider {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  cursor: grab;
+}
+.card-slider::-webkit-scrollbar { display: none; }
+.card-slider > * { scroll-snap-align: start; }
+.card-slider:focus-visible { outline: 2px solid var(--color-cream); outline-offset: 4px; }
+
+/* while dragging with the mouse */
+.card-slider.is-dragging { cursor: grabbing; scroll-snap-type: none; scroll-behavior: auto; user-select: none; }
+.card-slider.is-dragging a { pointer-events: none; }
+.card-slider img { -webkit-user-drag: none; user-select: none; }
+
+/* Prev / next buttons */
+.slider-nav { display: flex; gap: 0.6rem; }
+.slider-nav[hidden] { display: none; }
+/* nothing to scroll: no grab cursor */
+.card-slider.is-static { cursor: auto; }
+.slider-nav__btn {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  color: #fff;
+  transition: background var(--transition), color var(--transition), opacity var(--transition), border-color var(--transition);
+}
+.slider-nav__btn svg { width: 22px; height: 22px; }
+.slider-nav__btn:hover:not(:disabled) { background: #fff; border-color: #fff; color: var(--color-primary-dark); }
+.slider-nav__btn:disabled { opacity: 0.35; cursor: default; }

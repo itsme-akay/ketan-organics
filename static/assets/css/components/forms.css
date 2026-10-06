@@ -1,0 +1,86 @@
+/* Form card + fields (contact / enquiry forms) */
+.form {
+  padding: clamp(1.5rem, 3vw, 2.75rem);
+  border: 1px solid #e1e8d3;
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: 0 30px 60px rgba(27, 90, 45, 0.1);
+}
+.form__title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--color-primary-dark);
+}
+.form__note { margin-top: 0.35rem; font-size: 0.9rem; color: var(--color-text-muted); }
+.form__note span[aria-hidden], .field label span[aria-hidden] { color: #c0392b; }
+
+.form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 0 1rem; }
+.field { margin-top: 1.15rem; border: 0; min-width: 0; }
+.field label,
+.field legend { display: block; margin-bottom: 0.45rem; font-size: 0.95rem; font-weight: 500; color: var(--color-primary-dark); }
+
+.field input[type="text"],
+.field input[type="email"],
+.field input[type="tel"],
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1.5px solid #dfe6d3;
+  border-radius: 14px;
+  background: #fbfcf8;
+  color: var(--color-text);
+  outline: none;
+  transition: border-color var(--transition), box-shadow var(--transition), background var(--transition);
+}
+.field textarea { resize: vertical; min-height: 130px; }
+.field select {
+  appearance: none;
+  padding-right: 2.75rem;
+  background: #fbfcf8 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231b5a2d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E") no-repeat right 0.9rem center / 20px;
+}
+.field input::placeholder,
+.field textarea::placeholder { color: #9aa394; }
+.field input:focus,
+.field select:focus,
+.field textarea:focus { border-color: var(--color-sage); background: #fff; box-shadow: 0 0 0 4px rgba(28, 149, 72, 0.12); }
+
+/* error state */
+.field input[aria-invalid="true"],
+.field select[aria-invalid="true"],
+.field textarea[aria-invalid="true"] { border-color: #c0392b; background: #fff8f6; }
+.field__error { margin-top: 0.35rem; font-size: 0.85rem; color: #c0392b; }
+.field__error:empty { display: none; }
+
+/* checkbox chips */
+.chips { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.chip { position: relative; cursor: pointer; margin: 0 !important; }
+.chip input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
+.chip span {
+  display: inline-block;
+  padding: 0.55rem 1.1rem;
+  border: 1.5px solid #dfe6d3;
+  border-radius: 999px;
+  background: #fbfcf8;
+  font-size: 0.92rem;
+  font-weight: 400;
+  color: var(--color-text);
+  transition: background var(--transition), border-color var(--transition), color var(--transition);
+}
+.chip:hover span { border-color: var(--color-sage); }
+.chip input:checked + span { background: var(--color-sage); border-color: var(--color-sage); color: #fff; }
+.chip input:focus-visible + span { box-shadow: 0 0 0 4px rgba(28, 149, 72, 0.2); }
+
+.form__submit { margin-top: 1.6rem; border: 0; }
+.form__status { margin-top: 1rem; padding: 0.9rem 1.1rem; border-radius: 14px; font-size: 0.95rem; line-height: 1.5; }
+.form__status:empty { display: none; }
+.form__status.is-error { background: #fff1ee; color: #a5281b; }
+.form__status.is-info { background: var(--color-bg-soft); color: var(--color-primary-dark); }
+
+@media (max-width: 576px) {
+  .form { border-radius: 22px; }
+  .form__row { grid-template-columns: 1fr; }
+  .form__submit { width: 100%; justify-content: center; }
+}

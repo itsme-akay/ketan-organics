@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow"> <!-- TEST SITE: remove this line at the real launch -->
+  <title>Ketan Organics — Purely Organic Pleasure</title>
+  <meta name="description" content="Ketan Organics — 100% organic herbs, spices and export-ready produce.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="page-home">
+
+  <!-- HELLO BAR → wordpress: template-parts/header/hello-bar.php -->
+  <div class="hello-bar" aria-label="Highlights">
+    <div class="marquee">
+      <ul class="marquee__group">
+          <li class="marquee__item">100% Organic Herbs &amp; Spices</li>
+          <li class="marquee__item">Backed by Our Own Farmer Network</li>
+          <li class="marquee__item">Quality-Checked at Every Step</li>
+          <li class="marquee__item">Grown Naturally, Delivered with Trust</li>
+          <li class="marquee__item">Export-Ready Organic Produce</li>
+          <li class="marquee__item">10+ Years of Organic Excellence</li>
+      </ul>
+      <!-- duplicate group for seamless loop -->
+      <ul class="marquee__group" aria-hidden="true">
+          <li class="marquee__item">100% Organic Herbs &amp; Spices</li>
+          <li class="marquee__item">Backed by Our Own Farmer Network</li>
+          <li class="marquee__item">Quality-Checked at Every Step</li>
+          <li class="marquee__item">Grown Naturally, Delivered with Trust</li>
+          <li class="marquee__item">Export-Ready Organic Produce</li>
+          <li class="marquee__item">10+ Years of Organic Excellence</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- HEADER → wordpress: header.php + template-parts/header/site-header.php -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="site-logo" aria-label="Ketan Organics — Home">
+        <img src="assets/images/ketan-logo.webp" alt="Ketan Organics" width="500" height="183">
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="quality-certifications.html">Quality &amp; Certifications</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary">Get Appointment</a>
+        <button class="nav-toggle" type="button" aria-label="Menu" aria-controls="site-nav" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Each section → wordpress: template-parts/sections/<name>.php -->
+    <!-- HERO CAROUSEL → wordpress: template-parts/sections/hero-slider.php -->
+    <section class="hero-slider" data-hero-slider data-autoplay="5000" aria-roledescription="carousel" aria-label="Featured banners">
+      <div class="hero-slider__track">
+
+        <div class="hero-slide" role="group" aria-roledescription="slide" aria-label="1 of 2">
+          <img src="assets/images/banners-1.webp" width="1600" height="533" fetchpriority="high"
+               alt="Farmer harvesting organic herbs in a green field at sunrise">
+          <div class="visually-hidden">
+            <p>Organic Herbs &amp; Spices</p>
+            <h1>Pure Organic Herbs &amp; Spices, Grown with Purpose</h1>
+            <p>10+ years of trusted organic farming, backed by our own farmer network.</p>
+            <ul><li>Pure &amp; Natural</li><li>Farmer Empowerment</li><li>Sustainable Farming</li><li>A Healthier Tomorrow</li></ul>
+          </div>
+          <a href="products.html" class="hero-slide__hotspot hero-slide__hotspot--explore" aria-label="Explore Products"></a>
+          <a href="contact.html" class="hero-slide__hotspot hero-slide__hotspot--quote" aria-label="Request a Quote"></a>
+        </div>
+
+        <div class="hero-slide" role="group" aria-roledescription="slide" aria-label="2 of 2">
+          <img src="assets/images/banners-2.webp" width="1600" height="533" loading="lazy"
+               alt="Happy family holding a bowl of organic herbs">
+          <div class="visually-hidden">
+            <h2>Why choose Ketan Organics</h2>
+            <ul>
+              <li>10+ Years of Organic Farming Experience</li>
+              <li>Quality-Checked at Every Step</li>
+              <li>Grown the Traditional Way, Delivered the Modern Way</li>
+              <li>100% Organic, No Shortcuts</li>
+              <li>Backed by Our Own Farmer Network</li>
+              <li>A Wide Range of Organic Herbs &amp; Spices</li>
+            </ul>
+          </div>
+          <a href="about.html" class="hero-slide__link" aria-label="Learn more about Ketan Organics"></a>
+        </div>
+
+      </div>
+
+      <button class="hero-slider__arrow hero-slider__arrow--prev" type="button" aria-label="Previous slide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="hero-slider__arrow hero-slider__arrow--next" type="button" aria-label="Next slide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+      <div class="hero-slider__dots"></div>
+    </section>
+
+    <!-- ABOUT → wordpress: template-parts/sections/about.php -->
+    <section class="about" id="about">
+      <svg class="about__leaf" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><path d="M50 95C20 80 5 55 15 20c30 5 50 25 35 75zm3 0C45 55 60 25 90 5c10 40-5 75-37 90z"/></svg>
+      <div class="container about__grid">
+
+        <div class="about__media" data-reveal>
+          <div class="about__img-main">
+            <!-- TODO: replace with assets/images/home/about-main.webp (portrait, ~800×1000) -->
+            <img src="assets/images/banners-1.webp" width="1600" height="533" loading="lazy"
+                 alt="Ketan Organics farmer tending organic herb crops">
+          </div>
+          <div class="about__img-small">
+            <!-- TODO: replace with assets/images/home/about-small.webp (square, ~600×600) -->
+            <img src="assets/images/banners-2.webp" width="1600" height="533" loading="lazy"
+                 alt="Family enjoying fresh organic herbs">
+          </div>
+          <div class="about__badge">
+            <strong>10+</strong>
+            <span>Years of<br>Organic Farming</span>
+          </div>
+        </div>
+
+        <div class="about__content" data-reveal>
+          <p class="eyebrow">About Ketan Organics</p>
+          <h2 class="section-title">Rooted in Nature,<br> <span>Grown with Care</span></h2>
+          <p class="section-intro">
+            For over a decade, Ketan Organics has been bringing pure, naturally grown herbs and spices from
+            farm to family. We work hand in hand with our own network of farmers, following traditional
+            organic practices — no chemicals, no shortcuts.
+          </p>
+          <p class="section-intro">
+            Every batch is carefully checked for quality, freshness and purity, so what reaches you is
+            exactly what nature intended — clean, flavourful and good for a healthier tomorrow.
+          </p>
+
+          <ul class="about__points">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="8 12.5 11 15.5 16.5 9.5"/></svg>100% Organic, No Shortcuts</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="8 12.5 11 15.5 16.5 9.5"/></svg>Own Farmer Network</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="8 12.5 11 15.5 16.5 9.5"/></svg>Quality-Checked at Every Step</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="8 12.5 11 15.5 16.5 9.5"/></svg>Export-Ready Packaging</li>
+          </ul>
+
+          <!-- TODO: confirm these numbers -->
+          <div class="about__stats">
+            <div class="about__stat"><strong>10+</strong><span>Years Experience</span></div>
+            <div class="about__stat"><strong>500+</strong><span>Partner Farmers</span></div>
+            <div class="about__stat"><strong>50+</strong><span>Organic Products</span></div>
+          </div>
+
+          <div class="about__actions">
+            <a href="about.html" class="btn btn-primary">
+              Know More About Us
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <div class="about__call">
+              <span class="about__call-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+              </span>
+              <div>
+                <small>Call us anytime</small>
+                <!-- TODO: real phone number -->
+                <a href="tel:+910000000000">+91 00000 00000</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CATEGORIES → wordpress: template-parts/sections/categories.php (loop product categories) -->
+    <section class="categories" id="categories" data-slider-scope>
+      <div class="container">
+        <div class="categories__head" data-reveal>
+          <div class="categories__intro">
+            <p class="pill-label">What We Offer</p>
+            <h2 class="categories__title">Our Categories</h2>
+            <p class="categories__desc">
+              From steam-distilled essential oils to farm-fresh grains, explore our range of natural products —
+              grown, processed and quality-checked by our own farmer network.
+            </p>
+          </div>
+          <div class="categories__actions">
+            <div class="slider-nav">
+              <button class="slider-nav__btn" type="button" data-slider-prev aria-label="Previous categories"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
+              <button class="slider-nav__btn" type="button" data-slider-next aria-label="Next categories"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
+            </div>
+            <a href="products.html" class="btn-dot">Read More</a>
+          </div>
+        </div>
+
+        <div class="categories__grid card-slider" data-card-slider tabindex="0" aria-label="Product categories">
+          <a href="category-essential-oils.html" class="category-card" data-reveal>
+            <!-- TODO: replace with assets/images/categories/essential-oils.webp (portrait, ~760×960) -->
+            <img src="assets/images/categories/essential-oils.svg" width="760" height="960" loading="lazy" alt="Essential oil bottle with fresh leaves">
+            <span class="category-card__num">01</span>
+            <div class="category-card__body">
+              <div>
+                <h3 class="category-card__title">Essential Oils</h3>
+                <p class="category-card__desc">Pure, steam-distilled oils bottled at peak freshness.</p>
+              </div>
+              <span class="category-card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+            </div>
+          </a>
+          <a href="category-grains.html" class="category-card" data-reveal>
+            <!-- TODO: replace with assets/images/categories/grains.webp (portrait, ~760×960) -->
+            <img src="assets/images/categories/grains.svg" width="760" height="960" loading="lazy" alt="Golden grain stalks">
+            <span class="category-card__num">02</span>
+            <div class="category-card__body">
+              <div>
+                <h3 class="category-card__title">Grains</h3>
+                <p class="category-card__desc">Naturally grown, chemical-free grains from our farms.</p>
+              </div>
+              <span class="category-card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+            </div>
+          </a>
+          <a href="category-hydrosol.html" class="category-card" data-reveal>
+            <!-- TODO: replace with assets/images/categories/hydrosol.webp (portrait, ~760×960) -->
+            <img src="assets/images/categories/hydrosol.svg" width="760" height="960" loading="lazy" alt="Hydrosol spray bottle with flowers">
+            <span class="category-card__num">03</span>
+            <div class="category-card__body">
+              <div>
+                <h3 class="category-card__title">Hydrosol</h3>
+                <p class="category-card__desc">Gentle floral waters captured during distillation.</p>
+              </div>
+              <span class="category-card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+            </div>
+          </a>
+          <a href="category-mentha.html" class="category-card" data-reveal>
+            <!-- TODO: replace with assets/images/categories/mentha.webp (portrait, ~760×960) -->
+            <img src="assets/images/categories/mentha.svg" width="760" height="960" loading="lazy" alt="Fresh mentha leaves">
+            <span class="category-card__num">04</span>
+            <div class="category-card__body">
+              <div>
+                <h3 class="category-card__title">Mentha Products</h3>
+                <p class="category-card__desc">Mint oils and crystals from carefully grown mentha.</p>
+              </div>
+              <span class="category-card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HAPPY CLIENTS → wordpress: template-parts/sections/happy-clients.php -->
+    <!-- TODO: replace ALL placeholder reviews with genuine customer reviews before launch; confirm the "500+" figure -->
+    <section class="clients" id="happy-clients" data-clients>
+      <div class="container">
+        <h2 class="clients__title" data-reveal>500+ Happy Clients</h2>
+
+        <div class="clients__layout">
+          <!-- Left: photo / video carousel.
+               For a video slide add data-video="assets/videos/your-video.mp4" to the slide; the play button then appears. -->
+          <div class="clients__media" data-reveal>
+            <div class="clients__slide is-active">
+              <!-- TODO: replace with a real product / customer photo (portrait, ~840×1490) -->
+              <img src="assets/images/banners-1.webp" width="1600" height="533" loading="lazy" alt="Ketan Organics farmer harvesting fresh herbs" style="object-position: 73% center">
+            </div>
+            <div class="clients__slide">
+              <img src="assets/images/banners-2.webp" width="1600" height="533" loading="lazy" alt="Family enjoying Ketan Organics products" style="object-position: 16% center">
+            </div>
+            <button class="clients__play" type="button" aria-label="Play video" hidden>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
+            </button>
+            <button class="clients__arrow clients__arrow--prev" type="button" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></button>
+            <button class="clients__arrow clients__arrow--next" type="button" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+          </div>
+
+          <!-- Right: auto-scrolling review wall -->
+          <div class="clients__reviews" data-reveal>
+            <div class="clients__track" tabindex="0" aria-label="Customer reviews">
+            <div class="clients__row">
+              <figure class="client-review">
+                <blockquote>Customer review goes here. Replace this placeholder with a genuine quote about the product they bought.</blockquote>
+                <figcaption>Customer Name, City – Essential Oils</figcaption>
+              </figure>
+              <figure class="client-review">
+                <blockquote>Placeholder review. Add a real customer's words about quality, aroma or freshness here.</blockquote>
+                <figcaption>Customer Name, City – Grains</figcaption>
+              </figure>
+            </div>
+            <div class="clients__row">
+              <figure class="client-review">
+                <blockquote>Placeholder review. A short, honest line from a real buyer works best in this space.</blockquote>
+                <figcaption>Customer Name, City – Hydrosol</figcaption>
+              </figure>
+              <figure class="client-review">
+                <blockquote>Customer review goes here. Mention what they ordered and what they liked about it. Keep it to two or three lines.</blockquote>
+                <figcaption>Customer Name, City – Mentha Oil</figcaption>
+              </figure>
+            </div>
+            <div class="clients__row">
+              <figure class="client-review">
+                <blockquote>Placeholder review. Replace with a genuine quote from a wholesale or export customer.</blockquote>
+                <figcaption>Customer Name, City – Essential Oils</figcaption>
+              </figure>
+              <figure class="client-review">
+                <blockquote>Customer review goes here. Real feedback about packaging, delivery and consistency builds trust.</blockquote>
+                <figcaption>Customer Name, City – Mentha Crystals</figcaption>
+              </figure>
+            </div>
+            <div class="clients__row">
+              <figure class="client-review">
+                <blockquote>Placeholder review. Add a real customer's experience with your essential oils here.</blockquote>
+                <figcaption>Customer Name, City – Hydrosol</figcaption>
+              </figure>
+              <figure class="client-review">
+                <blockquote>Customer review goes here. Replace this placeholder with a genuine quote.</blockquote>
+                <figcaption>Customer Name, City – Grains</figcaption>
+              </figure>
+            </div>
+            <div class="clients__row">
+              <figure class="client-review">
+                <blockquote>Placeholder review. A real buyer's words about your grains or mentha products go here.</blockquote>
+                <figcaption>Customer Name, City – Essential Oils</figcaption>
+              </figure>
+              <figure class="client-review">
+                <blockquote>Customer review goes here. Keep each review short so it fits neatly in the card.</blockquote>
+                <figcaption>Customer Name, City – Mentha Oil</figcaption>
+              </figure>
+            </div>
+            </div>
+            <div class="clients__dots" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US → wordpress: template-parts/sections/why-us.php -->
+    <section class="why" id="why-us">
+      <div class="container">
+
+        <div class="why__head" data-reveal>
+          <div>
+            <p class="pill-label">Our Promise</p>
+            <h2 class="why__title">Why we are <em>Special</em></h2>
+          </div>
+          <p class="why__lead">
+            At <strong>Ketan Organics</strong>, we blend traditional farming wisdom with modern methods — and we grow
+            together with our farming community, strengthening the roots of <strong>organic herbs in India</strong>.
+          </p>
+        </div>
+
+        <ul class="why__cards">
+          <li class="why__card" data-reveal>
+            <span class="why__num">01</span>
+            <span class="why__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12C12 7.5 8.5 4 3.5 4c0 4.5 3.5 8 8.5 8z"/><path d="M12 14.5c0-4 3-7 8.5-7 0 4.5-3.5 7-8.5 7z"/><path d="M7 21h10"/></svg></span>
+            <h3>100% Natural &amp; Organic</h3>
+            <p>Authentic organic products, free from chemicals and shortcuts.</p>
+          </li>
+          <li class="why__card" data-reveal>
+            <span class="why__num">02</span>
+            <span class="why__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 12a8.5 8.5 0 0 1-14.8 5.7"/><path d="M3.5 12a8.5 8.5 0 0 1 14.8-5.7"/><polyline points="18.8 2.8 18.8 6.3 15.3 6.3"/><polyline points="5.2 21.2 5.2 17.7 8.7 17.7"/><path d="M12 15.5c0-3 1.8-5 5-5 0 3-2 5-5 5zm0 0v-3"/></svg></span>
+            <h3>Regenerative Organic Chain</h3>
+            <p>Soil-first farming that gives back more than it takes.</p>
+          </li>
+          <li class="why__card" data-reveal>
+            <span class="why__num">03</span>
+            <span class="why__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg></span>
+            <h3>Fair Practices</h3>
+            <p>Fair value and long-term partnerships with every farmer.</p>
+          </li>
+        </ul>
+
+        <div class="why__panel" data-reveal>
+          <svg class="why__leaf" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><path d="M50 95C20 80 5 55 15 20c30 5 50 25 35 75zm3 0C45 55 60 25 90 5c10 40-5 75-37 90z"/></svg>
+          <div class="why__text">
+            <p>
+              We are agripreneurs driven by purpose. Every product is chosen for its quality and its benefits, so only
+              the <strong>best herbs</strong> reach you. We still have a long way to go, but we are known for our values,
+              dedication and lasting relationships with our farmers, partners and customers.
+            </p>
+            <p>
+              From <strong>organic herbs</strong> and <strong>essential oils</strong> to <strong>bulk organic herbs
+              wholesale</strong>, we deliver natural products that support a healthier, more sustainable tomorrow.
+            </p>
+          </div>
+          <div class="why__side">
+            <ul class="why__tags">
+              <li>Organic Herbs</li><li>Essential Oils</li><li>Bulk Wholesale</li><li>Export Supply</li>
+            </ul>
+            <a href="contact.html" class="btn-dot">Talk to Our Team</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TRUST BADGES → wordpress: template-parts/sections/trust-badges.php -->
+    <section class="trust" id="trust" aria-label="Why you can trust us">
+      <div class="container">
+        <ul class="trust__band" data-reveal>
+          <li class="trust__item">
+            <span class="trust__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10.5L12 5l8 5.5V20"/><path d="M4 10.5h16"/><path d="M9 20v-5.5h6V20"/><path d="m9 14.5 6 5.5m0-5.5L9 20"/><path d="M11 8h2"/><path d="M2.5 20h19"/></svg></span>
+            <span class="trust__label">Farm-Direct Sourcing</span>
+          </li>
+          <li class="trust__item">
+            <span class="trust__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.5s6.5-5.6 6.5-11.2a6.5 6.5 0 1 0-13 0c0 5.6 6.5 11.2 6.5 11.2z"/><circle cx="12" cy="10.2" r="2.8"/><path d="M12 7.4v5.6M9.2 10.2h5.6M10 8.2l4 4M14 8.2l-4 4"/></svg></span>
+            <span class="trust__label">Made in India</span>
+          </li>
+          <li class="trust__item">
+            <span class="trust__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V9"/><path d="M12 11c0-2.3-1.7-4-4.3-4 0 2.3 1.7 4 4.3 4zm0-1.5c0-2.6 1.9-4.5 4.8-4.5 0 2.6-1.9 4.5-4.8 4.5z"/><path d="M3 15.5h3.2c.6 0 1.2.2 1.7.6l1.3 1c.4.3.8.4 1.300.4H13a1.2 1.2 0 0 0 0-2.500h-2"/><path d="M13.8 16.800l4.300-2.100a1.300 1.300 0 0 1 1.200 2.300l-5.300 3c-.7.400-1.500.5-2.300.300L7 19.100c-.3-.1-.7-.100-1-.100H3"/></svg></span>
+            <span class="trust__label">Eco-Friendly</span>
+          </li>
+          <li class="trust__item">
+            <span class="trust__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 18.500h5M10.500 21h3"/><path d="M12 3a6.200 6.200 0 0 0-4.200 10.800c.8.800 1.200 1.500 1.200 2.400h6c0-.9.400-1.600 1.200-2.400A6.200 6.200 0 0 0 12 3z"/><path d="M12 16.200v-5"/><path d="M12 12.200c0-1.600-1.100-2.700-2.800-2.700 0 1.600 1.100 2.700 2.800 2.700zm0-1c0-1.600 1.100-2.700 2.800-2.700 0 1.600-1.100 2.700-2.800 2.700z"/></svg></span>
+            <span class="trust__label">Ethical Practices</span>
+          </li>
+          <li class="trust__item">
+            <span class="trust__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19.500C5 10.500 10 5.200 20 4.500c0 9.500-5 15-13.500 15"/><path d="M4 21c2.500-6 6.500-10 11.500-12.500"/><path d="M9.500 14.500 9 10.800M12.500 11.800l3.700.500"/></svg></span>
+            <span class="trust__label">100% Plant-Based</span>
+          </li>
+          <li class="trust__item">
+            <span class="trust__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v5.500c0 4.300 2.900 7.500 7 9.500 4.100-2 7-5.200 7-9.500V6z"/><path d="M12 16.500v-5"/><path d="M12 13c0-1.800-1.300-3.100-3.200-3.100 0 1.800 1.300 3.100 3.200 3.100zm0-1.200c0-1.800 1.300-3.100 3.200-3.100 0 1.800-1.300 3.100-3.200 3.100z"/></svg></span>
+            <span class="trust__label">Chemical-Free</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- VIDEO → wordpress: template-parts/sections/video.php -->
+    <!-- To change the video: replace data-video (self-hosted file) or set data-youtube="VIDEO_ID" instead,
+         and update the poster image (16:9, ~1600×900). -->
+    <section class="video" id="video">
+      <div class="container">
+        <div class="video__frame" data-video-player data-video="assets/videos/ketan-organics.mp4" data-youtube="" data-reveal>
+          <img class="video__poster" src="assets/images/home/video-poster.jpg" width="1600" height="900" loading="lazy"
+               alt="Harvester working in a golden paddy field at sunset">
+          <span class="video__badge">
+            <img src="assets/images/ketan-logo.webp" width="500" height="183" alt="Ketan Organics">
+          </span>
+          <button class="video__play" type="button" aria-label="Play video">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8.5 5.8v12.4a.8.8 0 0 0 1.200.700l10-6.200a.8.8 0 0 0 0-1.400l-10-6.200a.8.8 0 0 0-1.200.700z"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS → wordpress: template-parts/sections/highlights.php -->
+    <!-- TODO: confirm the highlight texts and stats with the business before launch -->
+    <section class="highlights" id="highlights">
+      <svg class="highlights__leaf" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><path d="M50 95C20 80 5 55 15 20c30 5 50 25 35 75zm3 0C45 55 60 25 90 5c10 40-5 75-37 90z"/></svg>
+      <div class="container">
+
+        <div class="highlights__head" data-reveal>
+          <div class="highlights__intro">
+            <p class="pill-label">Highlights</p>
+            <h2 class="highlights__title">We Are Best <span>In Our Field</span></h2>
+            <p class="highlights__desc">
+              Grown the traditional way, delivered the modern way. Here is what makes Ketan Organics a partner
+              that farmers, brands and buyers trust.
+            </p>
+          </div>
+          <ul class="highlights__stats">
+            <li><strong>10+</strong><span>Years of organic farming</span></li>
+            <li><strong>4</strong><span>Product ranges</span></li>
+            <li><strong>100%</strong><span>Natural, no shortcuts</span></li>
+          </ul>
+        </div>
+
+        <div class="highlights__body">
+          <figure class="highlights__media" data-reveal>
+            <img src="assets/images/home/video-poster.jpg" width="1600" height="900" loading="lazy"
+                 alt="Harvest time on a farm in the Ketan Organics network">
+            <figcaption>
+              <span class="highlights__tag">From our farms</span>
+              <p>Backed by our own farmer network — from the field to your doorstep.</p>
+              <a href="about.html" class="btn-dot">Read More</a>
+            </figcaption>
+          </figure>
+
+          <div class="acc acc--glass" data-accordion data-reveal>
+            <div class="acc__item is-open">
+              <h3 class="acc__heading">
+                <button class="acc__trigger" type="button" aria-expanded="true" aria-controls="hl-panel-1" id="hl-trigger-1">
+                  <span class="acc__num">01</span>
+                  <span class="acc__label">Real Organic Products</span><span class="acc__plus" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="acc__panel" id="hl-panel-1" role="region" aria-labelledby="hl-trigger-1">
+                <div class="acc__body"><p>Every herb, grain and oil we offer is grown the natural way by our own farmer network — no chemical fertilisers, no synthetic pesticides — and checked for quality before it leaves the farm.</p></div>
+              </div>
+            </div>
+            <div class="acc__item">
+              <h3 class="acc__heading">
+                <button class="acc__trigger" type="button" aria-expanded="false" aria-controls="hl-panel-2" id="hl-trigger-2">
+                  <span class="acc__num">02</span>
+                  <span class="acc__label">Employment Opportunities</span><span class="acc__plus" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="acc__panel" id="hl-panel-2" role="region" aria-labelledby="hl-trigger-2">
+                <div class="acc__body"><p>Our work creates steady, year-round income for farming families in our network — from cultivation and harvesting to processing, distillation and packing.</p></div>
+              </div>
+            </div>
+            <div class="acc__item">
+              <h3 class="acc__heading">
+                <button class="acc__trigger" type="button" aria-expanded="false" aria-controls="hl-panel-3" id="hl-trigger-3">
+                  <span class="acc__num">03</span>
+                  <span class="acc__label">Skill Development</span><span class="acc__plus" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="acc__panel" id="hl-panel-3" role="region" aria-labelledby="hl-trigger-3">
+                <div class="acc__body"><p>We guide our farmers in organic cultivation, soil care and post-harvest handling, so every season they grow better crops and earn a fairer price.</p></div>
+              </div>
+            </div>
+            <div class="acc__item">
+              <h3 class="acc__heading">
+                <button class="acc__trigger" type="button" aria-expanded="false" aria-controls="hl-panel-4" id="hl-trigger-4">
+                  <span class="acc__num">04</span>
+                  <span class="acc__label">Quality-Checked at Every Step</span><span class="acc__plus" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="acc__panel" id="hl-panel-4" role="region" aria-labelledby="hl-trigger-4">
+                <div class="acc__body"><p>From seed to shipment, each batch is inspected for purity, freshness and consistency, so what reaches you is exactly what was promised.</p></div>
+              </div>
+            </div>
+            <div class="acc__item">
+              <h3 class="acc__heading">
+                <button class="acc__trigger" type="button" aria-expanded="false" aria-controls="hl-panel-5" id="hl-trigger-5">
+                  <span class="acc__num">05</span>
+                  <span class="acc__label">Export-Ready Supply</span><span class="acc__plus" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="acc__panel" id="hl-panel-5" role="region" aria-labelledby="hl-trigger-5">
+                <div class="acc__body"><p>Bulk and wholesale orders are packed to travel — clean, well-labelled and ready for buyers in India and overseas.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ → wordpress: template-parts/sections/faq.php -->
+    <!-- TODO: confirm every answer below with the business before launch -->
+    <section class="faq" id="faq">
+      <div class="container faq__grid">
+        <div class="faq__intro" data-reveal>
+          <p class="dot-label">FAQ</p>
+          <h2 class="faq__title">Questions? <span>We have answers.</span></h2>
+          <p class="faq__desc">Everything you need to know about our products, bulk orders and exports. Can't find what you're looking for?</p>
+          <div class="faq__help">
+            <span class="faq__help-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.500a8.400 8.400 0 0 1-8.500 8.300 8.700 8.700 0 0 1-3.900-.900L3 20.500l1.700-5A8.200 8.200 0 0 1 4 11.500 8.400 8.400 0 0 1 12.500 3.200 8.400 8.400 0 0 1 21 11.500z"/><path d="M9.500 10a2.600 2.600 0 0 1 5 .800c0 1.700-2.500 2-2.500 3.400"/><path d="M12 16.800v.100"/></svg>
+            </span>
+            <div>
+              <strong>Still have a question?</strong>
+              <span>Our team is happy to help.</span>
+            </div>
+            <a href="contact.html" class="btn btn-primary">Contact Us</a>
+          </div>
+        </div>
+        <div class="acc acc--cards" data-accordion data-reveal>
+            <div class="acc__item is-open">
+              <h3 class="acc__heading">
+                <button class="acc__trigger" type="button" aria-expanded="true" aria-controls="faq-panel-1" id="faq-trigger-1">
+                  <span>What products does Ketan Organics offer?</span><span class="acc__plus" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="acc__panel" id="faq-panel-1" role="region" aria-labelledby="faq-trigger-1">
+                <div class="acc__body"><p>We offer four main ranges: essential oils, grains, hydrosols and mentha products. Visit our Products page to see the full list, or contact us for the current catalogue.</p></div>
+              </div>
+            </div>
+            <div class="acc__item">
+              <h3 class="acc__heading">
+                <button class="acc__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-2" id="faq-trigger-2">
+                  <span>Are your products grown organically?</span><span class="acc__plus" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="acc__panel" id="faq-panel-2" role="region" aria-labelledby="faq-trigger-2">
+                <div class="acc__body"><p>Yes. Our crops are grown by our own farmer network using traditional organic practices, without chemical fertilisers or synthetic pesticides, and every batch is quality-checked before dispatch.</p></div>
+              </div>
+            </div>
+            <div class="acc__item">
+              <h3 class="acc__heading">
+                <button class="acc__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-3" id="faq-trigger-3">
+                  <span>Do you supply in bulk or wholesale quantities?</span><span class="acc__plus" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="acc__panel" id="faq-panel-3" role="region" aria-labelledby="faq-trigger-3">
+                <div class="acc__body"><p>Yes. We work with wholesalers, brands and manufacturers. Tell us the product and quantity you need and our team will share pricing and availability.</p></div>
+              </div>
+            </div>
+            <div class="acc__item">
+              <h3 class="acc__heading">
+                <button class="acc__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-4" id="faq-trigger-4">
+                  <span>Do you export outside India?</span><span class="acc__plus" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="acc__panel" id="faq-panel-4" role="region" aria-labelledby="faq-trigger-4">
+                <div class="acc__body"><p>Yes, we supply export-ready produce with suitable packaging. Share your destination country and requirements and we will guide you through documents and shipping.</p></div>
+              </div>
+            </div>
+            <div class="acc__item">
+              <h3 class="acc__heading">
+                <button class="acc__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-5" id="faq-trigger-5">
+                  <span>Can I request a sample before placing an order?</span><span class="acc__plus" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="acc__panel" id="faq-panel-5" role="region" aria-labelledby="faq-trigger-5">
+                <div class="acc__body"><p>Samples are available for most products. Contact us with the products you are interested in and we will arrange it.</p></div>
+              </div>
+            </div>
+            <div class="acc__item">
+              <h3 class="acc__heading">
+                <button class="acc__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-6" id="faq-trigger-6">
+                  <span>How do I get a quote?</span><span class="acc__plus" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="acc__panel" id="faq-panel-6" role="region" aria-labelledby="faq-trigger-6">
+                <div class="acc__body"><p>Use the Get Appointment button or our Contact page and send us your product list and quantities. We usually reply within one or two working days.</p></div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION → wordpress: template-parts/sections/cta.php -->
+    <section class="cta" id="get-quote">
+      <div class="container">
+        <div class="cta__card" data-reveal>
+          <div class="cta__content">
+            <p class="pill-label">Let's Grow Together</p>
+            <h2 class="cta__title">Need pure organic products <span>in bulk?</span></h2>
+            <p class="cta__desc">
+              Tell us what you need — essential oils, grains, hydrosols or mentha products — and our team will
+              get back to you with pricing, samples and availability.
+            </p>
+            <div class="cta__actions">
+              <a href="contact.html" class="btn-dot">Request a Quote</a>
+              <!-- TODO: real phone number -->
+              <a href="tel:+910000000000" class="cta__call">
+                <span class="cta__call-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.800 19.800 0 0 1-8.600-3.100 19.500 19.500 0 0 1-6-6A19.800 19.800 0 0 1 2.100 4.200 2 2 0 0 1 4.100 2h3a2 2 0 0 1 2 1.700c.1 1 .4 1.900.7 2.800a2 2 0 0 1-.5 2.100L8 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.400c.9.300 1.800.600 2.800.700a2 2 0 0 1 1.700 2z"/></svg>
+                </span>
+                <span><small>Or call us</small>+91 00000 00000</span>
+              </a>
+            </div>
+            <ul class="cta__points">
+              <li>Bulk &amp; wholesale supply</li>
+              <li>Export-ready packaging</li>
+              <li>Samples on request</li>
+            </ul>
+          </div>
+
+          <div class="cta__media">
+            <!-- TODO: replace with a real product / farm photo (~900×900) -->
+            <img src="assets/images/banners-1.webp" width="1600" height="533" loading="lazy"
+                 alt="Ketan Organics farmer harvesting fresh herbs">
+            <div class="cta__chip">
+              <strong>10+</strong>
+              <span>Years of trusted<br>organic farming</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER → wordpress: footer.php + template-parts/footer/ -->
+  <footer class="site-footer">
+    <!-- Scrolling message strip. TODO: edit these lines (offers, delivery info, etc.) -->
+    <div class="footer-marquee marquee-wrap" aria-label="Highlights">
+      <div class="marquee">
+        <ul class="marquee__group">
+          <li class="marquee__item">Bulk &amp; Wholesale Orders Welcome</li>
+          <li class="marquee__item">Export-Ready Packaging</li>
+          <li class="marquee__item">Samples Available on Request</li>
+          <li class="marquee__item">100% Natural, No Shortcuts</li>
+          <li class="marquee__item">Direct from Our Own Farmer Network</li>
+          <li class="marquee__item">Quality-Checked at Every Step</li>
+        </ul>
+        <ul class="marquee__group" aria-hidden="true">
+          <li class="marquee__item">Bulk &amp; Wholesale Orders Welcome</li>
+          <li class="marquee__item">Export-Ready Packaging</li>
+          <li class="marquee__item">Samples Available on Request</li>
+          <li class="marquee__item">100% Natural, No Shortcuts</li>
+          <li class="marquee__item">Direct from Our Own Farmer Network</li>
+          <li class="marquee__item">Quality-Checked at Every Step</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-brand__logo" aria-label="Ketan Organics — Home">
+            <img src="assets/images/ketan-logo.webp" width="500" height="183" loading="lazy" alt="Ketan Organics">
+          </a>
+          <!-- TODO: add real social profile links -->
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.500 21v-7.500h2.500l.400-3h-2.900V8.600c0-.900.300-1.500 1.500-1.500h1.500V4.400c-.300 0-1.200-.100-2.200-.100-2.200 0-3.700 1.300-3.700 3.800v2.400H8v3h2.600V21z"/></svg></a>
+            <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.300 4h2.800l-6.100 7 7.200 9h-5.600l-4.400-5.500L6.200 20H3.400l6.500-7.500L3 4h5.700l4 5.100zm-1 14.300h1.500L7.800 5.600H6.100z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.500"/><circle cx="12" cy="12" r="3.600"/><circle cx="16.700" cy="7.300" r=".9" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.200 8.200a2.400 2.400 0 0 0-1.700-1.700C18 6.100 12 6.100 12 6.100s-6 0-7.500.400a2.400 2.400 0 0 0-1.700 1.700C2.400 9.700 2.400 12 2.400 12s0 2.300.400 3.800a2.400 2.400 0 0 0 1.700 1.700c1.500.400 7.500.400 7.500.400s6 0 7.500-.400a2.400 2.400 0 0 0 1.700-1.700c.400-1.500.400-3.800.400-3.800s0-2.300-.400-3.800zM10.100 14.600V9.400l4.700 2.600z"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.500 9.300H3.800V20h2.700zM5.200 4a1.600 1.600 0 1 0 0 3.200A1.600 1.600 0 0 0 5.200 4zM20.200 13.900c0-3-1.600-4.800-4.100-4.800-1.400 0-2.400.700-2.900 1.500V9.300h-2.700V20h2.700v-5.700c0-1.500.800-2.500 2.100-2.500s2.100.900 2.100 2.500V20h2.800z"/></svg></a>
+          </div>
+          <p class="footer-copy">Copyright &copy; 2026 Ketan Organics.<br> All rights reserved.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer">
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="index.html#categories">Our Categories</a></li>
+            <li><a href="quality-certifications.html">Quality &amp; Certifications</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+          <ul>
+            <li><a href="index.html#why-us">Why We Are Special</a></li>
+            <li><a href="index.html#highlights">Highlights</a></li>
+            <li><a href="index.html#faq">FAQs</a></li>
+            <li><a href="contact.html">Request a Quote</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </nav>
+
+        <!-- TODO: replace ALL contact details below with the real ones -->
+        <address class="footer-contact">
+          <p><strong>Get in Touch:</strong><a href="mailto:info@ketanorganics.com">info@ketanorganics.com</a> (General enquiries)<br><a href="mailto:bulk@ketanorganics.com">bulk@ketanorganics.com</a> (Bulk &amp; wholesale orders)</p>
+          <p><strong>Call Us:</strong><a href="tel:+910000000000">+91 00000 00000</a></p>
+          <p><strong>Timings:</strong>10 AM - 7 PM<br>(Monday to Saturday)</p>
+          <p><strong>Address:</strong>NPX Tower, F-155, Urbtech NPx,<br>Sector 153, Noida,<br>Uttar Pradesh 201304</p>
+        </address>
+      </div>
+    </div>
+
+    <!-- torn-paper soil strip with leaf -->
+    <img class="footer-soil" src="assets/images/footer-graph.webp" width="1920" height="229" loading="lazy" alt="">
+  </footer>
+
+  <script src="assets/js/modules/hero-slider.js" defer></script>
+  <script src="assets/js/modules/card-slider.js" defer></script>
+  <script src="assets/js/modules/clients.js" defer></script>
+  <script src="assets/js/modules/video.js" defer></script>
+  <script src="assets/js/modules/accordion.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
